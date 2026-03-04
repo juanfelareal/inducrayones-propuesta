@@ -175,7 +175,7 @@
             .feature-card { padding: 18px 16px; }
             .feature-text { font-size: 14px; }
 
-            .invest-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 20px; }
+            .invest-grid { grid-template-columns: 1fr !important; gap: 16px; margin-top: 20px; }
             .invest-card { padding: 28px 22px; }
             .invest-card.recommended { transform: none; }
             .invest-card.recommended:hover { transform: none; }
@@ -200,7 +200,7 @@
 <body>
     <div class="presentation">
         <div class="progress" id="progress"></div>
-        <div class="slide-counter" id="slideCounter">1 / 7</div>
+        <div class="slide-counter" id="slideCounter">1 / 8</div>
         <div class="fullscreen-hint" id="fullscreenHint">Presiona F para pantalla completa</div>
 
         <!-- ===================== SLIDE 1: PORTADA (DARK) ===================== -->
@@ -356,12 +356,56 @@
                 </div>
             </div>
             <div class="pricing-note">
-                <p><span class="highlight-note">Despu&eacute;s de la Puesta a Punto</span>, ofrecemos operaci&oacute;n mensual continua (gesti&oacute;n de pauta + optimizaci&oacute;n) para escalar las ventas.</p>
+                <p><span class="highlight-note">Despu&eacute;s de la Puesta a Punto</span>, arranca la operaci&oacute;n mensual para escalar las ventas &rarr;</p>
             </div>
         </div>
 
-        <!-- ===================== SLIDE 6: FAQ (LIGHT) ===================== -->
+        <!-- ===================== SLIDE 6: OPERACION MENSUAL (LIGHT) ===================== -->
         <div class="slide slide-light" id="slide6">
+            <span class="section-tag">Operaci&oacute;n mes a mes</span>
+            <h2>Despu&eacute;s de la Puesta a Punto, <span class="highlight">escalamos juntos</span></h2>
+            <div class="invest-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+                <div class="invest-card" style="grid-column: 1 / -1;">
+                    <div class="invest-label">Fee mensual</div>
+                    <div class="invest-price">$2.000.000</div>
+                    <div class="invest-period">/mes +IVA &middot; + 5% de las ventas generadas</div>
+                    <div style="display: inline-block; padding: 4px 14px; border-radius: 50px; font-size: 12px; font-weight: 700; background: #DCFCE7; color: #166534;">Nosotros nos encargamos de todo</div>
+                </div>
+            </div>
+            <h3 style="margin-top: 30px; margin-bottom: 10px;">Ejecutables <span class="highlight">cada mes</span></h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#128202;</div>
+                    <div class="feature-text"><strong>Gesti&oacute;n de pauta digital:</strong> creaci&oacute;n, optimizaci&oacute;n y escala de campa&ntilde;as</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127909;</div>
+                    <div class="feature-text"><strong>Guiones y estructura</strong> de contenido mes a mes para pauta y redes</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#9993;</div>
+                    <div class="feature-text"><strong>Correos masivos:</strong> campa&ntilde;as de email marketing y flujos automatizados</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128736;</div>
+                    <div class="feature-text"><strong>Optimizaci&oacute;n continua</strong> del sitio web, ofertas y landing pages</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128200;</div>
+                    <div class="feature-text"><strong>Dashboard en tiempo real:</strong> inversi&oacute;n, ventas, retorno y embudo actualizado diariamente</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#129309;</div>
+                    <div class="feature-text"><strong>Equipo senior dedicado:</strong> 6 personas con +5 a&ntilde;os de experiencia en ecommerce</div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p>T&uacute; solo te encargas de <span class="highlight-note">grabar el contenido</span> que te guiamos y de <span class="highlight-note">producir y despachar</span> el producto. Nosotros hacemos el resto.</p>
+            </div>
+        </div>
+
+        <!-- ===================== SLIDE 7: FAQ (LIGHT) ===================== -->
+        <div class="slide slide-light" id="slide7">
             <span class="section-tag">Preguntas frecuentes</span>
             <h2>Resolvemos tus <span class="highlight">dudas</span></h2>
             <div class="faq-list">
@@ -384,8 +428,8 @@
             </div>
         </div>
 
-        <!-- ===================== SLIDE 7: CIERRE (DARK) ===================== -->
-        <div class="slide slide-dark slide-cierre" id="slide7">
+        <!-- ===================== SLIDE 8: CIERRE (DARK) ===================== -->
+        <div class="slide slide-dark slide-cierre" id="slide8">
             <div style="display: flex; align-items: center; gap: 24px; margin-bottom: 50px;">
                 <div class="brand-text" style="margin-bottom: 0; font-size: 22px;">Inducrayones</div>
                 <span style="font-size: 28px; color: #334155; font-weight: 300;">&times;</span>
@@ -410,7 +454,7 @@
 
     <script>
         let currentSlide = 1;
-        const totalSlides = 7;
+        const totalSlides = 8;
 
         function showSlide(n) {
             document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
